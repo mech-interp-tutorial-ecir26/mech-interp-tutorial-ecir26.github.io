@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECIR 2026 Tutorial on Mechanistic Interpretability</title>
+    <meta
+      name="description"
+      content="Official page for the ECIR 2026 tutorial on mechanistic interpretability."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="container hero-inner">
+        <p class="site-kicker">ECIR 2026</p>
+        <h1>Tutorial on Mechanistic Interpretability</h1>
+        <p class="event-meta">Delft, Netherlands • Sunday, March 30 • 9:00-12:30</p>
+        <nav class="resource-links" aria-label="Tutorial resources">
+          <a
+            href="https://link.springer.com/chapter/10.1007/978-3-032-21321-1_6"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open tutorial paper"
+            >Paper</a
+          >
+          <a
+            href="#"
+            class="disabled-link"
+            aria-disabled="true"
+            title="Slides will be available soon"
+            >Slides</a
+          >
+          <a
+            href="#"
+            class="disabled-link"
+            aria-disabled="true"
+            title="Code will be available soon"
+            >Code</a
+          >
+        </nav>
+        <section class="organizers-inline" aria-label="Organizers">
+          <div class="organizer-grid">
+            <article class="organizer-card">
+              <div class="organizer-photo-frame">
+                <img
+                  src="./images/catherine.JPG"
+                  alt="Headshot of Catherine Chen"
+                  class="organizer-photo organizer-photo-catherine"
+                />
+              </div>
+              <h3>Catherine Chen</h3>
+              <p>Brown University</p>
+            </article>
+            <article class="organizer-card">
+              <div class="organizer-photo-frame">
+                <img
+                  src="./images/maria.png"
+                  alt="Headshot of Maria Heuss"
+                  class="organizer-photo"
+                />
+              </div>
+              <h3>Maria Heuss</h3>
+              <p>University of Amsterdam</p>
+            </article>
+            <article class="organizer-card">
+              <div class="organizer-photo-frame">
+                <img
+                  src="./images/carsten.png"
+                  alt="Headshot of Carsten Eickhoff"
+                  class="organizer-photo organizer-photo-carsten"
+                />
+              </div>
+              <h3>Carsten Eickhoff</h3>
+              <p>University of Tübingen</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-divider" aria-hidden="true">
+        <div class="container">
+          <hr />
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container content-narrow">
+          <h2>About This Tutorial</h2>
+          <p>
+            This tutorial introduces <em>mechanistic interpretability</em>, a growing
+            research area within the broader interpretability community that seeks to
+            reverse-engineer model components to understand <em>how</em> neural models
+            perform tasks. While this area has rapidly advanced in NLP, yielding insights
+            into the inner workings of large Transformer-based models and enabling model
+            diagnostics, controllability, and safety, it remains largely unexplored in IR.
+          </p>
+          <p>
+            This tutorial provides a foundational overview of mechanistic
+            interpretability in NLP, covering its key goals and core methods. We then
+            zoom in on its early applications in IR, examining the few existing studies
+            in depth and discussing how these methods can be adapted to retrieval
+            settings. Through an interactive coding session, participants will gain a
+            practical understanding of how to design, implement, and analyze mechanistic
+            interpretability experiments.
+          </p>
+          <p>
+            By the end, attendees will be equipped with the conceptual and practical
+            foundation needed to initiate their own research and help strengthen the
+            emerging interpretability and explainability community within IR.
+          </p>
+          <h3 class="objectives-heading">Learning Objectives</h3>
+          <ul class="objectives-list">
+            <li>
+              Understand the key goals and motivations of mechanistic interpretability
+              as a research area.
+            </li>
+            <li>
+              Become familiar with the core methods that have led to influential
+              findings in ML and NLP.
+            </li>
+            <li>
+              Explore how these methods can be applied to IR and identify open
+              directions for future work.
+            </li>
+            <li>
+              Gain hands-on experience in designing, implementing, and analyzing
+              mechanistic interpretability experiments.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section schedule" id="schedule">
+        <div class="container">
+          <h2>Schedule</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Section</th>
+                  <th scope="col">Topic(s)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="part-label">Part I: Overview of MI in NLP</td>
+                  <td>
+                    <ul class="topics-list">
+                      <li>
+                        <strong>Introduction</strong><br />
+                        Motivation, Definition, and Background
+                      </li>
+                      <li>
+                        <strong>Overview of Core Methods</strong><br />
+                        <div class="subtopics-plain">
+                          <div>Vocabulary Projections</div>
+                          <div>Circuit Analysis</div>
+                          <div>Feature Analysis</div>
+                          <div>Steering</div>
+                        </div>
+                      </li>
+                      <li>
+                        <strong>Circuit Analysis Deep Dive</strong><br />
+                        <div class="subtopics-plain">
+                          <div>Activation Patching</div>
+                          <div>Path Patching</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="part-label">Break</td>
+                  <td>Coffee break</td>
+                </tr>
+                <tr>
+                  <td class="part-label">Part II: MI in IR</td>
+                  <td>
+                    <ul class="topics-list">
+                      <li>
+                        <strong>Overview of Progress So Far</strong><br />
+                        <div class="subtopics-plain">
+                          <div>Probing</div>
+                          <div>Circuit Analysis</div>
+                        </div>
+                      </li>
+                      <li>
+                        <strong>Interactive Coding</strong><br />
+                        <div class="subtopics-plain">
+                          <div>Activation Patching</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="part-label">Part III: Conclusion</td>
+                  <td>Future Directions, Discussion, Q&amp;A</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Questions? Contact: catherine_s_chen@brown.edu</p>
+      </div>
+    </footer>
+  </body>
+</html>
